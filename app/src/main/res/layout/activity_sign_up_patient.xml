@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/background"
+    tools:context=".SignUpPatientActivity">
+
+
+    <LinearLayout
+        android:id="@+id/progress_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:visibility="gone"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminateTint="@color/colorPrimary"
+            />
+        <TextView
+            android:id="@+id/progress_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/signing_up"
+            android:textColor="@color/colorPrimary"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/not_progress_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_up"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:padding="8dp"/>
+
+    <EditText
+        android:id="@+id/edt_text_patient_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_name"
+        android:layout_margin="4dp"
+        android:padding="4dp"/>
+
+    <EditText
+        android:id="@+id/edt_text_patient_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_phone_no"
+        android:layout_margin="4dp"
+        android:padding="4dp"/>
+
+        <TextView
+            android:id="@+id/edt_text_patient_dob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/select_d_o_b"
+            android:textSize="18sp"
+            android:layout_margin="4dp"
+            android:padding="4dp"
+            android:drawableRight="@drawable/ic_date_range"/>
+
+
+<!--    <EditText-->
+<!--        android:id="@+id/edt_text_patient_dob"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="@string/enter_dob"-->
+<!--        android:layout_margin="4dp"-->
+<!--        android:padding="4dp"/>-->
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/patient_gender_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:padding="4dp"
+        />
+
+    <EditText
+        android:id="@+id/edt_text_patient_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_email"
+        android:layout_margin="4dp"
+        android:padding="4dp"/>
+
+    <EditText
+        android:id="@+id/edt_text_patient_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_password"
+        android:layout_margin="4dp"
+        android:padding="4dp"/>
+
+    <Button
+        android:id="@+id/btn_patient_sign_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_up"
+        android:layout_margin="4dp"
+        android:padding="4dp"
+        android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

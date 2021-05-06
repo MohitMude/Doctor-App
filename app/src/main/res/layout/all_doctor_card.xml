@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="12dp"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="3dp"
+    android:layout_margin="4dp"
+    android:padding="2dp">
+
+    <LinearLayout
+        android:id="@+id/all_doc_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+        <ImageView
+            android:id="@+id/doc_image"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_person"
+            android:layout_weight="1.5"
+            android:padding="2dp"
+            android:layout_gravity="center"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:padding="4dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4.5"
+            android:orientation="vertical"
+            android:padding="3.8dp">
+
+            <TextView
+                android:id="@+id/doc_txt_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Doctor name"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:padding="4dp"
+                android:layout_marginLeft="4dp" />
+
+            <TextView
+                android:id="@+id/doc_txt_speciality"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Speciality"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:padding="4dp"
+                android:layout_marginLeft="4dp"
+               />
+
+            <TextView
+                android:id="@+id/doc_txt_qualification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Qualification"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:padding="4dp"
+                android:layout_marginLeft="4dp"
+                />
+
+            <TextView
+                android:id="@+id/doc_txt_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email: "
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:padding="4dp"
+                android:layout_marginLeft="4dp"
+               />
+
+            <TextView
+                android:id="@+id/doc_txt_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ph:"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:padding="4dp"
+                android:layout_marginLeft="4dp"
+                />
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
